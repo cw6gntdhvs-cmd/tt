@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List & Contact Information</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #2c3e50;
+            background-color: #fafafa;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        header {
+            margin-bottom: 35px;
+            border-bottom: 2px solid #f1f2f6;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a252f;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin: 0;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #34495e;
+            margin: 0 0 20px 0;
+            border-left: 3px solid #3498db;
+            padding-left: 10px;
+        }
+
+        .product-list, .contact-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .product-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #f1f2f6;
+        }
+
+        .product-item:first-child {
+            padding-top: 0;
+        }
+
+        .product-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .product-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 15px;
+        }
+
+        .product-price {
+            font-weight: 500;
+            color: #e74c3c;
+            font-size: 15px;
+        }
+
+        .product-desc {
+            margin: 6px 0 0 0;
+            color: #7f8c8d;
+            font-size: 13.5px;
+        }
+
+        .contact-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f2f6;
+        }
+
+        .contact-item:first-child {
+            padding-top: 0;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: #95a5a6;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .contact-detail {
+            color: #2c3e50;
+            font-size: 14px;
+        }
+        
+        .contact-detail a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-detail a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Minimalist Catalog</h1>
+            <p class="subtitle">Premium essentials curated for modern living.</p>
+        </header>
+
+        <section>
+            <h2>Our Products</h2>
+            <ul class="product-list">
+                <li class="product-item">
+                    <div class="product-header">
+                        <span class="product-name">Minimalist Leather Wallet</span>
+                        <span class="product-price">$45.00</span>
+                    </div>
+                    <p class="product-desc">Full-grain vegetable-tanned leather with four card slots and a central bill compartment.</p>
+                </li>
+                <li class="product-item">
+                    <div class="product-header">
+                        <span class="product-name">Anodized Aluminum Fountain Pen</span>
+                        <span class="product-price">$60.00</span>
+                    </div>
+                    <p class="product-desc">Precision-machined body featuring a stainless steel fine nib and converter system.</p>
+                </li>
+                <li class="product-item">
+                    <div class="product-header">
+                        <span class="product-name">A5 Hardcover Dot Grid Journal</span>
+                        <span class="product-price">$24.00</span>
+                    </div>
+                    <p class="product-desc">160 pages of ink-proof 120gsm paper, complete with an expandable inner pocket.</p>
+                </li>
+                <li class="product-item">
+                    <div class="product-header">
+                        <span class="product-name">Matte Ceramic Desk Organizer</span>
+                        <span class="product-price">$38.00</span>
+                    </div>
+                    <p class="product-desc">Three modular compartments designed to hold writing instruments, notes, and small accessories.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Get in Touch</h2>
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <div class="contact-label">Email Support</div>
+                    <div class="contact-detail"><a href="mailto:hello@minimalistcatalog.com">hello@minimalistcatalog.com</a></div>
+                </li>
+                <li class="contact-item">
+                    <div class="contact-label">Telephone</div>
+                    <div class="contact-detail"><a href="tel:+15550192834">+1 (555) 019-2834</a></div>
+                </li>
+                <li class="contact-item">
+                    <div class="contact-label">Headquarters</div>
+                    <div class="contact-detail">742 Studio Lane, Suite 100, San Francisco, CA 94103</div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
